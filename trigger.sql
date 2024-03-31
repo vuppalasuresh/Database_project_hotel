@@ -1,3 +1,4 @@
+USE hotel;
 #########################################################################################################################
 CREATE TRIGGER calculate_days_trigger
 BEFORE INSERT ON booking
