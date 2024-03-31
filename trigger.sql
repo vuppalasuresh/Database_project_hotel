@@ -1,4 +1,5 @@
 USE hotel;
+SET GLOBAL log_bin_trust_function_creators = 1;
 #########################################################################################################################
 CREATE TRIGGER calculate_days_trigger
 BEFORE INSERT ON booking
