@@ -1,3 +1,7 @@
+SET @@SESSION.SQL_LOG_BIN= 0;
+SET @@GLOBAL.GTID_PURGED=/*!80000 '+'*/ '';
+SET @@SESSION.SQL_LOG_BIN = @MYSQLDUMP_TEMP_LOG_BIN;
+
 USE hotel;
 SET GLOBAL log_bin_trust_function_creators = 1;
 #########################################################################################################################
