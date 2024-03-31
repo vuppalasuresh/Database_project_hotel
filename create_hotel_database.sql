@@ -99,7 +99,7 @@ CREATE TABLE `roomamenities` (
   CONSTRAINT `roomamenities_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `room` (`Roomid`),
   CONSTRAINT `roomamenities_ibfk_2` FOREIGN KEY (`amenity_id`) REFERENCES `amenities` (`amenity_id`)
 );
- 
+
 DROP TABLE IF EXISTS `booking`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
