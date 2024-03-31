@@ -17,3 +17,5 @@ jobs:
       run: mysql -h ${{ secrets.DB_HOSTNAME }} --port 3306 -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source create_hotel_database.sql";
     - name: Run a trigger.sql
       run: mysql -h ${{ secrets.DB_HOSTNAME }} --port 3306 -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source trigger.sql";
+    - name: Run a CREATE PROCEDURE.sql
+      run: mysql -h ${{ secrets.DB_HOSTNAME }} --port 3306 -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source CREATE PROCEDURE.sql";
