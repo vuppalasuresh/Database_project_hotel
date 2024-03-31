@@ -14,7 +14,7 @@ DELIMITER //
 DROP PROCEDURE IF EXISTS CalculateAndUpdatePrice;
  
 DELIMITER //
- 
+
 CREATE PROCEDURE CalculateAndUpdatePrice(
     IN bookid INT,
     IN days INT
