@@ -1,5 +1,7 @@
 USE hotel;
 
+DELIMITER //
+
 CREATE PROCEDURE CalculateAndUpdatePrice(
     IN bookid INT,
     IN days INT
@@ -29,3 +31,5 @@ BEGIN
     SET Amount = totalPrice
     WHERE bookingID = bookid;
 END //
+
+DELIMITER ;
