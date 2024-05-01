@@ -1,3 +1,4 @@
+USE `cosc 640`;
 CREATE VIEW room_group_counts AS
 SELECT
     CASE

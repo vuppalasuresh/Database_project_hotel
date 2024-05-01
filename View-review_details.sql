@@ -1,3 +1,4 @@
+USE `cosc 640`;
 CREATE VIEW review_details AS
 SELECT
     r.reviewID,

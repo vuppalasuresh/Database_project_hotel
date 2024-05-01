@@ -1,3 +1,4 @@
+USE `cosc 640`;
 CREATE VIEW payment_counts AS
 SELECT
     'Cash' AS payment_type,

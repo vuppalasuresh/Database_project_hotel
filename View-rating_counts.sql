@@ -1,3 +1,4 @@
+USE `cosc 640`;
 CREATE VIEW rating_counts AS
 SELECT
     rating,

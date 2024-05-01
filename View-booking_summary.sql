@@ -1,3 +1,4 @@
+USE `cosc 640`;
 CREATE VIEW booking_summary AS
 SELECT
     SUM(CASE WHEN breakfast = 'on' THEN 1 ELSE 0 END) AS Customers_who_had_breakfast,

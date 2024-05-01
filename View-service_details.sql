@@ -1,3 +1,4 @@
+USE `cosc 640`;
 CREATE VIEW service_details AS
 SELECT
     s.ServiceID,

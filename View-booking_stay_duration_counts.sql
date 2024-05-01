@@ -1,3 +1,4 @@
+USE `cosc 640`;
 CREATE VIEW booking_stay_duration_counts AS
 SELECT
     SUM(CASE WHEN days >= 1 AND days <= 2 THEN 1 ELSE 0 END) AS One_or_More_than_one_day,

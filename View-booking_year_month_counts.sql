@@ -1,3 +1,4 @@
+USE `cosc 640`;
 CREATE VIEW booking_year_month_counts AS
 SELECT 
     YEAR(checkin) AS Year, 
