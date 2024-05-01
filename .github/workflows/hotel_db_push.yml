@@ -52,3 +52,4 @@ jobs:
       run: mysql -h ${{ secrets.DB_HOSTNAME }} --port 3306 -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source View-room_group_counts.sql";
     - name: Run a View-service_details.sql
       run: mysql -h ${{ secrets.DB_HOSTNAME }} --port 3306 -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source View-service_details.sql";
+  
