@@ -31,5 +31,24 @@ jobs:
       run: mysql -h ${{ secrets.DB_HOSTNAME }} --port 3306 -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source cosc 640_services.sql";
     - name: Run a cosc 640_staff.sql
       run: mysql -h ${{ secrets.DB_HOSTNAME }} --port 3306 -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source cosc 640_staff.sql";
-
-      
+# Running the following SQL queries for VIEW
+    - name: Run a View-booking_people_counts.sql
+      run: mysql -h ${{ secrets.DB_HOSTNAME }} --port 3306 -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source View-booking_people_counts.sql";
+    - name: Run a View-booking_stay_duration_counts.sql
+      run: mysql -h ${{ secrets.DB_HOSTNAME }} --port 3306 -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source View-booking_stay_duration_counts.sql";
+    - name: Run a View-booking_summary.sql
+      run: mysql -h ${{ secrets.DB_HOSTNAME }} --port 3306 -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source View-booking_summary.sql";
+    - name: Run a View-booking_year_counts.sql
+      run: mysql -h ${{ secrets.DB_HOSTNAME }} --port 3306 -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source View-booking_year_counts.sql";
+    - name: Run a cosc 640_reviews.sqlView-booking_year_month_counts.sql
+      run: mysql -h ${{ secrets.DB_HOSTNAME }} --port 3306 -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source View-booking_year_month_counts.sql";
+    - name: Run a View-payment_counts.sql
+      run: mysql -h ${{ secrets.DB_HOSTNAME }} --port 3306 -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source View-payment_counts.sql";
+    - name: Run a View-rating_counts.sql
+      run: mysql -h ${{ secrets.DB_HOSTNAME }} --port 3306 -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source View-rating_counts.sql";
+    - name: Run a View-review_details.sql
+      run: mysql -h ${{ secrets.DB_HOSTNAME }} --port 3306 -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source View-review_details.sql";
+    - name: Run a View-room_group_counts.sql
+      run: mysql -h ${{ secrets.DB_HOSTNAME }} --port 3306 -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source View-room_group_counts.sql";
+    - name: Run a View-service_details.sql
+      run: mysql -h ${{ secrets.DB_HOSTNAME }} --port 3306 -u${{ secrets.DB_USER }} -p${{ secrets.DB_PASSWORD }} -e "source View-service_details.sql";
