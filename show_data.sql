@@ -1,0 +1,1 @@
+SELECT * FROM `cosc 640`.customer;
