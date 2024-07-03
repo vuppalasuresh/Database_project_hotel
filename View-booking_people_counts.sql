@@ -6,3 +6,4 @@ SELECT
     SUM(CASE WHEN No_of_people > 5 THEN 1 ELSE 0 END) AS More_than_five_people
 FROM
     booking;
+
